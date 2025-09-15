@@ -1,0 +1,15 @@
+name: myproject
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.11.9
+  - cudatoolkit=11.6
+  - numpy=1.26.4
+  - pip
+  - pip:
+      - torch==1.13.1+cu116 --index-url https://download.pytorch.org/whl/cu116
+      - sentence-transformers==2.2.2
+      - transformers==4.33.3
+      - tokenizers==0.13.3
+      - huggingface_hub==0.25.2
